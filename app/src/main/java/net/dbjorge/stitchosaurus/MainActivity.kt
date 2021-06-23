@@ -6,10 +6,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import net.dbjorge.stitchosaurus.ui.main.SectionsPagerAdapter
 import net.dbjorge.stitchosaurus.databinding.ActivityMainBinding
+import net.dbjorge.stitchosaurus.ui.main.ProjectsPagerAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,14 +19,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+        val projectsPagerAdapter = ProjectsPagerAdapter(this, supportFragmentManager)
         val viewPager: ViewPager = binding.viewPager
-        viewPager.adapter = sectionsPagerAdapter
+        viewPager.adapter = projectsPagerAdapter
         val tabs: TabLayout = binding.tabs
         tabs.setupWithViewPager(viewPager)
-        val fab: FloatingActionButton = binding.fab
+        val addProjectButton: FloatingActionButton = binding.addProjectButton
 
-        fab.setOnClickListener { view ->
+        addProjectButton.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }

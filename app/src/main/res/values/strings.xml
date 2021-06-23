@@ -2,4 +2,8 @@
     <string name="app_name">Stitchosaurus</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="add_project_button_label">Add project</string>
+    <string name="reset_counter_button_label">Reset</string>
+    <string name="notes_text_view_hint">Project notes</string>
+    <string name="default_project_label">Untitled project</string>
 </resources>
