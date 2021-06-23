@@ -1,0 +1,2 @@
+rootProject.name = "Stitchosaurus"
+include ':app'
