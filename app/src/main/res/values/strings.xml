@@ -6,4 +6,16 @@
     <string name="reset_counter_button_label">Reset</string>
     <string name="notes_text_view_hint">Project notes</string>
     <string name="default_project_label">Untitled project</string>
+    <string name="home_no_projects_message">No projects found.</string>
+    <string name="project_details_label">Project details</string>
+    <string name="add_project_label">Add project...</string>
+    <string name="add_project_hint">Project title</string>
+    <string name="error_validating_project_label">Invalid title</string>
+    <string name="delete_project">Delete project</string>
+    <string name="edit_project_label">Edit project title</string>
+    <string name="delete_project_label">Delete project</string>
+    <string name="cancel_delete_button_text">Cancel</string>
+    <string name="confirm_delete_button_text">Delete</string>
+    <string name="error_deleting_project">Error deleting project</string>
+    <string name="delete_confirmation_message">Are you sure you want to delete project \"%1$s\"?</string>
 </resources>
