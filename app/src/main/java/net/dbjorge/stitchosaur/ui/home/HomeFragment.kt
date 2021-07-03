@@ -1,4 +1,4 @@
-package net.dbjorge.stitchosaurus.ui.home
+package net.dbjorge.stitchosaur.ui.home
 
 import android.os.Bundle
 import android.util.Log
@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import net.dbjorge.stitchosaurus.data.Project
-import net.dbjorge.stitchosaurus.databinding.HomeFragmentBinding
-import net.dbjorge.stitchosaurus.ui.ProjectBasedViewModelFactory
+import net.dbjorge.stitchosaur.data.Project
+import net.dbjorge.stitchosaur.databinding.HomeFragmentBinding
+import net.dbjorge.stitchosaur.ui.ProjectBasedViewModelFactory
 
 private const val TAG = "HomeFragment"
 

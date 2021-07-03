@@ -1,4 +1,4 @@
-package net.dbjorge.stitchosaurus.data
+package net.dbjorge.stitchosaur.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

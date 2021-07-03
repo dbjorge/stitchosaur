@@ -1,4 +1,4 @@
-package net.dbjorge.stitchosaurus.ui
+package net.dbjorge.stitchosaur.ui
 
 import android.content.Context
 import android.view.View

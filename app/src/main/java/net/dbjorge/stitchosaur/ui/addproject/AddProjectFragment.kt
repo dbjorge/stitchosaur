@@ -1,8 +1,7 @@
-package net.dbjorge.stitchosaurus.ui.addproject
+package net.dbjorge.stitchosaur.ui.addproject
 
 import android.os.Bundle
 import android.util.Log
-import android.util.Log.VERBOSE
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,10 +9,10 @@ import android.view.inputmethod.EditorInfo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import net.dbjorge.stitchosaurus.R
-import net.dbjorge.stitchosaurus.databinding.AddProjectFragmentBinding
-import net.dbjorge.stitchosaurus.ui.ProjectBasedViewModelFactory
-import net.dbjorge.stitchosaurus.ui.closeSoftKeyboard
+import net.dbjorge.stitchosaur.R
+import net.dbjorge.stitchosaur.databinding.AddProjectFragmentBinding
+import net.dbjorge.stitchosaur.ui.ProjectBasedViewModelFactory
+import net.dbjorge.stitchosaur.ui.closeSoftKeyboard
 
 private const val TAG = "AddProjectFragment"
 
@@ -54,13 +53,13 @@ class AddProjectFragment : Fragment() {
         }
     }
 
-    private fun renderState(state: CommitProjectState) {
+    private fun renderState(state: AddProjectViewModel.State) {
         when (state) {
-            CommitProjectState.SUCCESS -> {
+            AddProjectViewModel.State.SAVE_SUCCESS -> {
                 Log.v(TAG, "Successfully added project, returning to previous fragment")
                 findNavController().popBackStack()
             }
-            CommitProjectState.ERROR -> {
+            AddProjectViewModel.State.SAVE_ERROR -> {
                 binding.projectLabelEditText.error = getString(R.string.error_validating_project_label)
             }
             else -> { }

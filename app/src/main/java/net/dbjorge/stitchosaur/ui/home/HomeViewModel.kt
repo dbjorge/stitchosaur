@@ -1,9 +1,9 @@
-package net.dbjorge.stitchosaurus.ui.home
+package net.dbjorge.stitchosaur.ui.home
 
 import androidx.lifecycle.*
 import kotlinx.coroutines.async
-import net.dbjorge.stitchosaurus.data.Project
-import net.dbjorge.stitchosaurus.data.ProjectDao
+import net.dbjorge.stitchosaur.data.Project
+import net.dbjorge.stitchosaur.data.ProjectDao
 
 class HomeViewModel(private val projectRepository: ProjectDao) : ViewModel() {
     private val _projectList = MutableLiveData<List<Project>>()

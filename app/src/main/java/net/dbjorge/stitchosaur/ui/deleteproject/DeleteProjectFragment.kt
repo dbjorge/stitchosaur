@@ -1,4 +1,4 @@
-package net.dbjorge.stitchosaurus.ui.deleteproject
+package net.dbjorge.stitchosaur.ui.deleteproject
 
 import android.os.Bundle
 import android.util.Log
@@ -10,10 +10,10 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.google.android.material.snackbar.Snackbar
-import net.dbjorge.stitchosaurus.R
-import net.dbjorge.stitchosaurus.data.Project
-import net.dbjorge.stitchosaurus.databinding.DeleteProjectFragmentBinding
-import net.dbjorge.stitchosaurus.ui.ProjectBasedViewModelFactory
+import net.dbjorge.stitchosaur.R
+import net.dbjorge.stitchosaur.data.Project
+import net.dbjorge.stitchosaur.databinding.DeleteProjectFragmentBinding
+import net.dbjorge.stitchosaur.ui.ProjectBasedViewModelFactory
 
 private const val TAG = "DeleteProjectFragment"
 
@@ -70,6 +70,9 @@ class DeleteProjectFragment : Fragment() {
             }
             DeleteProjectViewModel.State.WAITING_FOR_INPUT -> {
                 binding.confirmDeleteButton.isEnabled = true
+            }
+            DeleteProjectViewModel.State.DELETING -> {
+                binding.confirmDeleteButton.isEnabled = false
             }
             DeleteProjectViewModel.State.DELETE_SUCCESS -> {
                 Log.v(TAG, "Successfully deleted project, returning to grandparent fragment")

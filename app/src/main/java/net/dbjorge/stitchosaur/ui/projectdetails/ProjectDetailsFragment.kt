@@ -1,4 +1,4 @@
-package net.dbjorge.stitchosaurus.ui.projectdetails
+package net.dbjorge.stitchosaur.ui.projectdetails
 
 import android.os.Bundle
 import android.view.*
@@ -8,11 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import androidx.navigation.ui.NavigationUI
-import net.dbjorge.stitchosaurus.R
-import net.dbjorge.stitchosaurus.databinding.ProjectDetailsFragmentBinding
-import net.dbjorge.stitchosaurus.ui.ProjectBasedViewModelFactory
-import net.dbjorge.stitchosaurus.ui.home.HomeFragmentDirections
+import net.dbjorge.stitchosaur.R
+import net.dbjorge.stitchosaur.databinding.ProjectDetailsFragmentBinding
+import net.dbjorge.stitchosaur.ui.ProjectBasedViewModelFactory
 
 class ProjectDetailsFragment : Fragment() {
     private val args by navArgs<ProjectDetailsFragmentArgs>()

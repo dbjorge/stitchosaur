@@ -1,4 +1,4 @@
-package net.dbjorge.stitchosaurus
+package net.dbjorge.stitchosaur
 
 import org.junit.Test
 

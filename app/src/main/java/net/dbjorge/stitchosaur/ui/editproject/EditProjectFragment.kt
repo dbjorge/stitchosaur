@@ -1,8 +1,7 @@
-package net.dbjorge.stitchosaurus.ui.editproject
+package net.dbjorge.stitchosaur.ui.editproject
 
 import android.os.Bundle
 import android.util.Log
-import android.util.Log.VERBOSE
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,13 +10,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import net.dbjorge.stitchosaurus.R
-import net.dbjorge.stitchosaurus.data.Project
-import net.dbjorge.stitchosaurus.databinding.AddProjectFragmentBinding
-import net.dbjorge.stitchosaurus.databinding.EditProjectFragmentBinding
-import net.dbjorge.stitchosaurus.ui.ProjectBasedViewModelFactory
-import net.dbjorge.stitchosaurus.ui.closeSoftKeyboard
-import net.dbjorge.stitchosaurus.ui.projectdetails.ProjectDetailsFragmentArgs
+import net.dbjorge.stitchosaur.R
+import net.dbjorge.stitchosaur.databinding.EditProjectFragmentBinding
+import net.dbjorge.stitchosaur.ui.ProjectBasedViewModelFactory
+import net.dbjorge.stitchosaur.ui.closeSoftKeyboard
 
 private const val TAG = "EditProjectFragment"
 

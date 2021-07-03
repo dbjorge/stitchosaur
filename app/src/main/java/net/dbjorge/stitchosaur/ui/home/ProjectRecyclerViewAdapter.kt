@@ -1,11 +1,11 @@
-package net.dbjorge.stitchosaurus.ui.home
+package net.dbjorge.stitchosaur.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import net.dbjorge.stitchosaurus.R
-import net.dbjorge.stitchosaurus.data.Project
+import net.dbjorge.stitchosaur.R
+import net.dbjorge.stitchosaur.data.Project
 
 typealias ClickListener = (Project) -> Unit
 

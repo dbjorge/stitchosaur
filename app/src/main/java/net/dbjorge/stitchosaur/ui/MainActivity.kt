@@ -1,4 +1,4 @@
-package net.dbjorge.stitchosaurus.ui
+package net.dbjorge.stitchosaur.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI.navigateUp
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
-import net.dbjorge.stitchosaurus.R
-import net.dbjorge.stitchosaurus.databinding.MainActivityBinding
+import net.dbjorge.stitchosaur.R
+import net.dbjorge.stitchosaur.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: MainActivityBinding
